@@ -5,7 +5,7 @@ baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
 url: "http://tkato0909.github.io/portfolio" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https:yourusername.githu.io'
 # User settings
 username: Taichi Kato
-user_title: aichi Kato - Developer / UI Designer
+user_title: Taichi Kato - Developer / UI Designer
 email: tkato.main@gmail.com
 twitter_username: kato_taichi
 github_username:  tkato0909
