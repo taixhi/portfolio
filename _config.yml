@@ -4,11 +4,11 @@ description: "Personal portfolio of what Taichi Kato does, and possibly a blog."
 baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
 url: "http://tkato0909.github.io/portfolio" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https:yourusername.githu.io'
 # User settings
-username: lorem ipsum
-user_title: Lorem Ipsum - FrontEnd
-email: lorem.lorem@ipsum.com
-twitter_username: loremipsum
-github_username:  loremipsum
+username: Taichi Kato
+user_title: aichi Kato - Developer / UI Designer
+email: tkato.main@gmail.com
+twitter_username: kato_taichi
+github_username:  tkato0909
 gplus_username:  loremipsum
 disqus_username: loremipsum
 
