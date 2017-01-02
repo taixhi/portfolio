@@ -2,7 +2,7 @@
 title: Taichi Kato - Student Software Developer
 description: "Personal portfolio of what Taichi Kato does, and possibly a blog."
 baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
-url: "http://tkato0909.github.io" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https:yourusername.githu.io'
+url: "http://tkato0909.github.io/portfolio" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https:yourusername.githu.io'
 # User settings
 username: lorem ipsum
 user_title: Lorem Ipsum - FrontEnd
