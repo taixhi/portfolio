@@ -1,18 +1,18 @@
 # Site settings
 title: Jekyll-Uno
 description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno/'
+url: 'https://tkato0909.github.io/portfolio/'
+baseurl: '/profile/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Taichi Kato'
+  email: tkato.main@gmail.com
+  twitter_username: kato_taichi
+  facebook_username: kt.taichi
+  github_username:  tkato0909
+  linkedin_username:  taichikato
 
 defaults:
   -
