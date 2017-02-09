@@ -4,7 +4,7 @@ date:   2017-01-10 15:04:23
 categories: [about]
 tags: [about]
 ---
-I write code and build stuff. I'm a software developer, designer and a co-founder at [Questo App](http://getquesto.com). I'm from Japan and I currently study in Singapore.
+I write code and build stuff. I'm a software developer, designer and a co-founder at [Questo App](http://getquesto.com). 
 
 Currently interested in UX and UI Design, Natural Language Processing and Artificial Intelligence.
 
