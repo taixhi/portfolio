@@ -1,7 +1,7 @@
 # Site settings
-title: Taichi Kato
+title: 'Taichi Kato'
 description: 'Student Software Developer / UI Designer <br> Co-Founder at Questo App '
-url: 'https://taichikato.com/portfolio/'
+url: 'https://taichikato.com/'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
@@ -13,6 +13,7 @@ author:
   facebook_username: kt.taichi
   github_username:  tkato0909
   linkedin_username:  taichikato
+  so_username: taichi-kato
 
 defaults:
   -

@@ -54,3 +54,14 @@ pre.highlight code,
   border: 3px solid #fff;
   border-radius:100%;
 }
+h1 {
+  width: 190px;
+  height: 49px;
+  object-fit: contain;
+  font-family: AvenirNext;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  color: #4a4a4a;
+  color: var(--charcoal-grey);
+}
