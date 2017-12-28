@@ -12,7 +12,7 @@ html{
   padding-bottom: 0.25em;
 }
 .about-text {
-  padding-left: 0.5em;
+  padding-left: 0.3em;
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
@@ -51,7 +51,7 @@ li {
   color: #4a4a4a;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
-  margin: 2em 0.5em;
+  margin: 1em 0.3em;
   border: solid #4a4a4a 2px;
   text-decoration: none;
 }
@@ -65,7 +65,7 @@ a {
 }
 
 /* Customize container */
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .container {
     max-width: 750px;
   }
