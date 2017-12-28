@@ -1,0 +1,71 @@
+.title {
+  font-family: Roboto;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #333;
+  padding-bottom: 0.25em;
+}
+.about-text {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a
+}
+h4 {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+  padding-top: 20px;
+}
+body {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}
+li {
+  padding: 0.5em;
+}
+.btn {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  color: #4a4a4a;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  margin: 1em 0;
+  border: solid #4a4a4a 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #eee;
+  text-decoration: none;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}

@@ -1,56 +1,52 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Taichi Kato</title>
+ 	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<div>
-	<h1>Taichi Kato.</h1>
-    {% if site.author.so_username %}
-	<!-- StackOverflow -->
-	<li class="navigation__item">
-       <a href="http://stackoverflow.com/users/5486053/{{so_username}}" title="Taichi Kato on Stack Overflow" target="_blank">
-          <i class="icon icon-social-stack-overflow"></i>
-          <span class="label">Stack Overflow</span>
-        </a>
-      </li>
-    {% endif %}
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    {% if site.author.facebook_username %}
-      <!-- Facebook -->
-      <li class="navigation__item">
-        <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-          <i class="icon icon-social-facebook"></i>
-          <span class="label">Facebook</span>
-        </a>
-      </li>
-    {% endif %}
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">Taichi Kato.</h1>
+		<div class="about-text">
+			I'm a highschool somophore in <a href="https://en.wikipedia.org/wiki/Singapore">Singapore</a> passionate about <b>startups, AI, visual programming and art.</b> <br><br> I'm currently working on an AI-powered question generation platform called <a href="https://getquesto.com">Questo</a>.
+		</div>
+		<script language="JavaScript">
+			var username = "tkato.main";
+			var hostname = "gmail.com";
+			document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "' class='btn'>" + "Let's Chat!" + "</a>");
+		</script>
+		<h4>What I'm good at</h4>
+			<ul>
+				<li>Machine Learning (Keras and Tensorflow)</li>
+				<li>iOS programming (Swift)</li>
+				<li>Photography</li>
+			</ul>  
+		<h4>Some projects I've worked on</h4>
+			<ul>
+				<li><a href="https://getquesto.com">Questo (2016- Present)</a> - AI powered iOS app which generates quizzes based on a photo of a textbook.</li>
+				<li><a href="http://getphotonify.strikingly.com/">Photonify (2017)</a> - An iOS app which tells you how to take better photos in real time</li>
+				<li><a href="https://devpost.com/software/hequals-h">Hequals (2017)</a> - An automatic human resource allocator which aims to eliminate any form of discrimination in the tech world by basing decisions purely on skills. </li>
+				<li><a href="url">InstaPopular (2017)</a> - Fun little Keras implementation of a ML algorithm which tells you who of your friends are most popular on Instagram.</li>
+				<li><a href="https://github.com/SuperSpy827/Komme">Komme (2015)</a> - A virstual navigation game to find ways to get to  a certain location only through Google Streetview - made with js.</li>
+			</ul>  
 
-    {% if site.author.linkedin_username %}
-      <!-- LinkedIn -->
-      <li class="navigation__item">
-        <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-          <i class="icon icon-social-linkedin"></i>
-          <span class="label">LinkedIn</span>
-        </a>
-      </li>
-    {% endif %}
-
-    {% if site.author.github_username %}
-      <!-- GitHub -->
-      <li class="navigation__item">
-        <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-          <i class="icon icon-social-github"></i>
-          <span class="label">GitHub</span>
-        </a>
-      </li>
-    {% endif %}
-
-    {% if site.author.email %}
-      <!-- Email -->
-      <li class="navigation__item">
-        <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-          <i class="icon icon-mail"></i>
-          <span class="label">Email</span>
-        </a>
-      </li>
-    {% endif %}
-</div>
+		<h4>Achievements and Experiences</h4>
+			<ul>
+				<li>iOS intern at Team Lab when I was 15.</li>
+				<li>Organiser of <a href="url">ideaHacks 2017</a>.</li>
+				<li><a href="url">Won $40,000 of prizes</a> for being “Most Creative” at Startup Weekend - the most prestegious hackathon in SG.</li>
+				<li><a href="url">Won</a> 1st place at PitchIt! organised by IBM Bluemix.</li>
+				<li>Won ideaHacks 2016 with <a href="https://getquesto.com">Questo</a>.</li>
+			</ul>
+	</div>
+</body>
+</html>
