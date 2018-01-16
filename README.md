@@ -1,2 +1,2 @@
 # portfolio
-Taichi Kato's Personal Website, check it out on: [taichikato.com](https://taichikato.com)
+Taichi Kato's Personal Website, check it out on: [taichikato.com](http://taichikato.com)
