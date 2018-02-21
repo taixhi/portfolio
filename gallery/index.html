@@ -1,0 +1,172 @@
+---
+layout: default
+images:
+  - image_path: images/marinabay.jpg
+    thumb_path: images/marinabay_thumb.jpg
+    title: Marina Bay
+    full_width: 1000
+    full_height: 843
+  - image_path: images/skytree.jpg
+    thumb_path: images/marinabay_thumb.jpg
+    title: Sky Tree
+    full_width: 1000
+    full_height: 1333
+  - image_path: images/skytree.jpg
+    thumb_path: images/marinabay_thumb.jpg
+    title: Sky Tree
+    full_width: 1000
+    full_height: 1333
+  - image_path: images/skytree.jpg
+    thumb_path: images/marinabay_thumb.jpg
+    title: Sky Tree
+    full_width: 1000
+    full_height: 1333
+  - image_path: images/skytree.jpg
+    thumb_path: images/marinabay_thumb.jpg
+    title: Sky Tree
+    full_width: 1000
+    full_height: 1333
+  - image_path: images/skytree.jpg
+    thumb_path: images/marinabay_thumb.jpg
+    title: Sky Tree
+    full_width: 1000
+    full_height: 1333
+  - image_path: images/skytree.jpg
+    thumb_path: images/marinabay_thumb.jpg
+    title: Sky Tree
+    full_width: 1000
+    full_height: 1333
+---
+<!-- Core CSS file -->
+<link rel="stylesheet" href="dist/photoswipe.css"> 
+
+<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+<link rel="stylesheet" href="dist/default-skin/default-skin.css"> 
+
+<!-- Core JS file -->
+<script src="dist/photoswipe.min.js"></script> 
+
+<!-- UI JS file -->
+<script src="dist/photoswipe-ui-default.min.js"></script> 
+
+<div class="home">
+  <div id ="container" class="picture" itemscope itemtype="http://schema.org/ImageGallery">
+    {% for image in page.images %}
+        <figure class="item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" style="margin: 2px; width: {{image.full_width| divided_by: 3}}px;float: left;">
+          <a href="{{ image.image_path }}" itemprop="contentUrl" data-size="{{image.full_width}}x{{image.full_height}}" data-index="{{ forloop.index }}" alt="{{ image.title}}">
+            <img src="{{ image.image_path }}" height="{{image.full_height | divided_by: 3}}" width="{{image.full_width| divided_by: 3}}" itemprop="thumbnail" alt="Beach">
+          </a>
+        </figure>
+    {% endfor %}
+  </div>
+</div>
+<!-- PhotoSwipe markup -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+ 
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+ 
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="dist/jquery.masonry.min.js"></script>
+
+<script type="text/javascript">
+(function($) {
+    $('.picture').each( function() {
+        // Get the items.
+        var $pic = $(this),
+            getItems = function() {
+                var items = [];
+                $pic.find('a').each(function() {
+                    var $href   = $(this).attr('href'),
+                        $size   = $(this).data('size').split('x'),
+                        $width  = $size[0],
+                        $height = $size[1];
+
+                    var item = {
+                        src : $href,
+                        w   : $width,
+                        h   : $height
+                    }
+
+                    items.push(item);
+                });
+                return items;
+            }
+
+        var items = getItems();
+
+        // Preload image.
+        var image = [];
+        $.each(items, function(index, value) {
+            image[index]     = new Image();
+            image[index].src = value['src'];
+        });
+
+        // Binding click event.
+        var $pswp = $('.pswp')[0];
+        $pic.on('click', 'figure', function(event) {
+            event.preventDefault();
+            
+            var $index = $(this).index();
+
+            var options = {
+                index: $index,
+                bgOpacity: 0.7,
+                showHideOpacity: true
+            }
+
+            var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+            lightBox.init();
+        });
+    });
+})(jQuery);
+var $container = $('#container');
+$container.imagesLoaded(function(){
+  $container.masonry({
+    itemSelector : '.item',
+    // gutterWidth : -20,
+    gutter: 0,
+    columnWidth : {{image.full_width| divided_by: 3}}
+  });
+});
+
+</script>
+<style type="text/css">
+</style>
